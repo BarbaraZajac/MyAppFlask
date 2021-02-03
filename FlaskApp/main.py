@@ -3,10 +3,9 @@ from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask('blog')
 
-
-# @app.route('/')
-# def hello_world():
-    # return 'Hello My First App in Flask'
+@app.route('/')
+def hello_world():
+    return 'Hello My First App in Flask'
 
 
 
