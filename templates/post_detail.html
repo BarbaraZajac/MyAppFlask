@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <p>Autor: {{ post.author }}</p>
+        <strong>{{ post.title }}</strong>
+        <p>{{ post.content }}</p>
+    </div>
+    <a href="{{ url_for('index') }}">Powrót</a>
+{% endblock %}

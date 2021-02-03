@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Czy na pewno chcesz usunąć post zatytułowany <strong>{{ post.title }}</strong>?</p>
+    <form method="post">
+        <button type="submit">Potwierdź</button>
+    </form>
+    <a href="{{ url_for('index') }}">Powrót</a>
+{% endblock %}
